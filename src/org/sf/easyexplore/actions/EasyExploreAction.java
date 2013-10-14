@@ -2,12 +2,9 @@
 /*     */ 
 /*     */ import java.io.File;
 /*     */ import java.text.MessageFormat;
-/*     */ import org.eclipse.core.resources.IFile;
-/*     */ import org.eclipse.core.resources.IProject;
+
 /*     */ import org.eclipse.core.resources.IResource;
 /*     */ import org.eclipse.core.runtime.IAdaptable;
-/*     */ import org.eclipse.core.runtime.IPath;
-/*     */ import org.eclipse.jdt.core.IJavaProject;
 /*     */ import org.eclipse.jdt.internal.core.JarPackageFragmentRoot;
 /*     */ import org.eclipse.jdt.internal.core.PackageFragment;
 /*     */ import org.eclipse.jface.action.IAction;
@@ -18,6 +15,10 @@
 /*     */ import org.eclipse.ui.IObjectActionDelegate;
 /*     */ import org.eclipse.ui.IWorkbenchPart;
 /*     */ import org.sf.easyexplore.EasyExplorePlugin;
+/*     */ 
+/*     */ 
+/*     */ 
+/*     */ 
 /*     */ 
 /*     */ public class EasyExploreAction
 /*     */   implements IObjectActionDelegate

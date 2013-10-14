@@ -4,6 +4,7 @@
 /*     */ import java.io.StringWriter;
 /*     */ import java.util.MissingResourceException;
 /*     */ import java.util.ResourceBundle;
+
 /*     */ import org.eclipse.core.resources.IWorkspace;
 /*     */ import org.eclipse.core.resources.ResourcesPlugin;
 /*     */ import org.eclipse.core.runtime.ILog;
@@ -17,7 +18,15 @@
 /*     */   private static EasyExplorePlugin plugin;
 /*     */   private ResourceBundle resourceBundle;
 /*     */ 
-/*     */   public EasyExplorePlugin(IPluginDescriptor descriptor)
+			public EasyExplorePlugin() {
+				plugin = this;
+				try {
+					this.resourceBundle = ResourceBundle
+							.getBundle("org.sf.easyexplore.EasyExplorePluginResources");
+				} catch (MissingResourceException localMissingResourceException) {
+				}
+			}
+			public EasyExplorePlugin(IPluginDescriptor descriptor)
 /*     */   {
 /*  31 */     super(descriptor);
 /*  32 */     plugin = this;
@@ -80,7 +89,9 @@
 /*     */     }
 /*  99 */     else if (osName.indexOf("Mac") != -1) {
 /* 100 */       defaultTarget = "open {0}";
-/*     */     }
+/*     */     }else if(osName.indexOf("Ubuntu") != -1){
+				defaultTarget = "nautilus --browser {0}";
+			  }
 /*     */ 
 /* 103 */     store.setDefault("org.sf.easyexplore.targetPreference", defaultTarget);
 /*     */   }
@@ -95,7 +106,8 @@
 /* 120 */     String osName = System.getProperty("os.name");
 /*     */ 
 /* 122 */     return ((osName.indexOf("Windows") != -1) || 
-/* 122 */       (osName.indexOf("Mac") != -1));
+/* 122 */       (osName.indexOf("Mac") != -1) ||
+				(osName.indexOf("Ubuntu") != -1));
 /*     */   }
 /*     */ }
 
