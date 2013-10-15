@@ -25,5 +25,5 @@ Download the release jar([Download](https://github.com/houdejun214/EasyExplore/r
 
 ### Feedback.
 
-If you have any technical problems with my release or find bugs please email [me](houdejun214@gmail.com) or [open a new issue](https://github.com/houdejun214/EasyExplore/issues/new) on this
+If you have any technical problems with my release or find bugs please email [me](mailto:houdejun214@gmail.com) or [open a new issue](https://github.com/houdejun214/EasyExplore/issues/new) on this
 project
