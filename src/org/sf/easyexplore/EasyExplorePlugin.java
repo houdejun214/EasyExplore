@@ -89,7 +89,7 @@
 /*     */     }
 /*  99 */     else if (osName.indexOf("Mac") != -1) {
 /* 100 */       defaultTarget = "open {0}";
-/*     */     }else if(osName.indexOf("Ubuntu") != -1){
+/*     */     }else if(osName.indexOf("Linux") != -1){
 				defaultTarget = "nautilus --browser {0}";
 			  }
 /*     */ 
@@ -107,7 +107,7 @@
 /*     */ 
 /* 122 */     return ((osName.indexOf("Windows") != -1) || 
 /* 122 */       (osName.indexOf("Mac") != -1) ||
-				(osName.indexOf("Ubuntu") != -1));
+				(osName.indexOf("Linux") != -1));
 /*     */   }
 /*     */ }
 
