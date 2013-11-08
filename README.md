@@ -19,7 +19,7 @@ My current release(1.0.4.u01) is not a best effective release, as I used "nautil
 ### How to use it.
 
 
-Download the release jar([Download](https://github.com/houdejun214/EasyExplore/releases/download/1.0.4.u01/org.sf.easyexplore_1.0.4.u01.jar)) and put it in the plugins folder of eclipse
+Download the release jar([Download](https://github.com/houdejun214/EasyExplore/releases/download/1.0.4.u02/org.sf.easyexplore_1.0.4.u02.jar)) and put it in the plugins folder of eclipse
 
 ---
 
